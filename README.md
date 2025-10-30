@@ -90,21 +90,10 @@ Use AI models to predict irrigation needs based on temperature and soil history.
 
 Expand for multi-zone irrigation systems.
 
-
-
----
-
-📷 Project Output
-
-(Add images of your circuit and working setup here)
-Example:
-
-
-
 ---
 
 🧑‍💻 Developed By
 
 Ravi Kumar Bandi
 B.Tech (3rd Year) | Smart Automation Enthusiast
-📅 Year: 2025
+Year: 2025
