@@ -66,36 +66,6 @@ Relay Output connected to the motor and power supply for switching.
 5. The Serial Monitor displays live sensor readings for debugging.
 
 
-
-
----
-
-💻 Arduino Code
-
-int water;
-const int relayPin = 3;     // Relay connected to digital pin 3
-const int sensorPin = 6;    // Soil moisture sensor connected to digital pin 6
-
-void setup() {
-  pinMode(relayPin, OUTPUT);   // Set relay pin as output
-  pinMode(sensorPin, INPUT);   // Set sensor pin as input
-  Serial.begin(9600);          // Begin serial communication for debugging
-}
-
-void loop() {
-  water = digitalRead(sensorPin);  // Read soil moisture sensor value
-  Serial.println(water);           // Print value for debugging
-  
-  if (water == HIGH) {             // HIGH = dry soil
-    digitalWrite(relayPin, LOW);   // Turn OFF relay (motor OFF)
-  } else {
-    digitalWrite(relayPin, HIGH);  // Turn ON relay (motor ON)
-  }
-  
-  delay(400); // Delay for stability
-}
-
-
 ---
 
 🧾 Applications
